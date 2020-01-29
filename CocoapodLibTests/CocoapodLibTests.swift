@@ -10,9 +10,12 @@ import XCTest
 @testable import CocoapodLib
 
 class CocoapodLibTests: XCTestCase {
+    var swiftyLib: SwiftLib?
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        swiftyLib = SwiftLib()
+
     }
 
     override func tearDown() {
@@ -29,6 +32,10 @@ class CocoapodLibTests: XCTestCase {
         self.measure {
             // Put the code you want to measure the time of here.
         }
+    }
+
+    func testAdd() {
+        XCTAssertEqual(swiftyLib?.add(a: 1, b: 1), 2)
     }
 
 }
