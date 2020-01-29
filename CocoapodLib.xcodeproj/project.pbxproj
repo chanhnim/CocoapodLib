@@ -18,6 +18,7 @@
 		85BB790223E108D1001E926F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85BB790023E108D1001E926F /* LaunchScreen.storyboard */; };
 		85BB790D23E108D2001E926F /* ExamplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BB790C23E108D2001E926F /* ExamplesTests.swift */; };
 		85BB791823E108D2001E926F /* ExamplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BB791723E108D2001E926F /* ExamplesUITests.swift */; };
+		85BB792423E1094C001E926F /* SwiftLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BB792323E1094C001E926F /* SwiftLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		85BB791323E108D2001E926F /* ExamplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExamplesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85BB791723E108D2001E926F /* ExamplesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesUITests.swift; sourceTree = "<group>"; };
 		85BB791923E108D2001E926F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85BB792323E1094C001E926F /* SwiftLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			children = (
 				85BB78D823E0FDF5001E926F /* CocoapodLib.h */,
 				85BB78D923E0FDF5001E926F /* Info.plist */,
+				85BB792323E1094C001E926F /* SwiftLib.swift */,
 			);
 			path = CocoapodLib;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				TargetAttributes = {
 					85BB78D423E0FDF5001E926F = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					85BB78DD23E0FDF6001E926F = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -381,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85BB792423E1094C001E926F /* SwiftLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,6 +586,7 @@
 		85BB78EA23E0FDF6001E926F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Y967XA34N6;
@@ -597,6 +603,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.volvocars.CocoapodLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -605,6 +612,7 @@
 		85BB78EB23E0FDF6001E926F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Y967XA34N6;
@@ -629,6 +637,7 @@
 		85BB78ED23E0FDF6001E926F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y967XA34N6;
 				INFOPLIST_FILE = CocoapodLibTests/Info.plist;
@@ -647,6 +656,7 @@
 		85BB78EE23E0FDF6001E926F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y967XA34N6;
 				INFOPLIST_FILE = CocoapodLibTests/Info.plist;
